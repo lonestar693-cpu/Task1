@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1 Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#upload">Upload</a></li>
+                <li><a href="#api">Flask API</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Task1</h1>
+            <p>This is a simple web app with upload functionality and Flask integration.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Explore our gallery of uploaded images.</p>
+            <!-- Images would be dynamically loaded here -->
+        </section>
+        <section id="upload">
+            <h2>Upload Your File</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section id="api">
+            <h2>Flask API Integration</h2>
+            <p>This section explains how we are using Flask for our backend API.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Lonestar693 CPU. All rights reserved.</p>
+        <p><strong>Security Tip:</strong> Always validate and sanitize user-uploaded files to prevent security vulnerabilities.</p>
+    </footer>
+</body>
+</html>
